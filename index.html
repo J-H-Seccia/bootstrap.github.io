@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FWDP - Project 1b - Bootstrap</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercise #16 || Typewriter effect</title>
     
-</body>
+        <!-- Normalize & styles-->
+        <link rel="stylesheet" href="styles/normalize-fwd.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/styles.css">
+    
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id="hero">
+            <header>
+                <nav class="navbar bg-body-tertiary navbar-expand-lg" data-bs-theme="dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                            Bootstrap
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">What Is It?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">What Does It Do?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Why Use It?</a>
+                                    </li>
+                                </ul>
+                          </div>
+                    </div>
+                </nav>
+            </header>
+    
+            <section id="heading-text">
+                <div class="container-lg my-5">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-3"></div>
+                        <div class="col-6 text-center text-md-start">
+                            <h1 class="display-2 fw-bold">Bootstrap makes things 
+                                <span id="typewriter"></span>
+                                <span id="cursor">|</span>
+                            </h1>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+                </div>
+            </section>
+            
+
+            <section id="action-call">
+                <div class="container-lg my-5">
+                    <div class="row justify-content-center align-items-center">
+                    <div class="col-1"></div>
+                    <div id="action-call" class="col-10 text-center text-md-start">
+                        <p class="display-6">See how the above text was styled without writing any CSS using Bootstrap</p>
+                        <svg width="12" height="12" viewBox="0 0 12 12">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0303 6.53033C11.3232 6.23744 11.3232 5.76256 11.0303 5.46967C10.7374 5.17678 10.2626 5.17678 9.96967 5.46967L6.75 8.68934L6.75 0.75C6.75 0.335786 6.41421 -2.11379e-07 6 -2.29485e-07C5.58579 -2.47591e-07 5.25 0.335786 5.25 0.75L5.25 8.68934L2.03033 5.46967C1.73744 5.17678 1.26256 5.17678 0.96967 5.46967C0.676777 5.76256 0.676777 6.23744 0.96967 6.53033L5.46967 11.0303C5.76256 11.3232 6.23744 11.3232 6.53033 11.0303L11.0303 6.53033Z"/>
+                        </svg>
+                    <div class="col-1"></div>
+                    </div>
+                </div>
+                </div>
+<div class="p-3 m-4 bg-info bg-opacity-10 border border-info rounded-end">
+    <section id="code-block">
+        <pre>
+            <code>
+                &lt;section id="heading-text"&gt;
+                    &lt;div class="container-lg my-5"&gt;
+                        &lt;div class="row justify-content-center align-items-center"&gt;
+                            &lt;div class="col-md-3">&lt;/div&gt;
+                            &lt;div class="col-md-6 text-center text-md-start"&gt;
+                                &lt;h1 class="display-1 fw-bold"&gt; 
+                                    Bootstrap makes things 
+                                    &lt;span id="typewriter"&gt;&lt;/span&gt;
+                                    &lt;span id="cursor"&gt;|&lt;/span&gt;
+                                &lt;/h1&gt;
+                            &lt;/div&gt;
+                            &lt;div class="col-md-3"&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            </code>
+        </pre>
+    </section>
+</div>
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="scripts/script.js"></script>
+    </body>
 </html>
