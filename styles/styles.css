@@ -1,1 +1,51 @@
 /* Start of styles */
+:root {
+    --gray-100: #262626;
+    --gray-80: #515151;
+    --giants-orange: #F46036;
+    --silver-lake-blue: #5B85AA;
+    --delft-blue: #414770;
+    --russian-violet: #372248;
+}
+
+body {
+    color: var(--gray-100);
+    background-color: var(--silver-lake-blue);
+}
+
+
+h1 span {
+    color: var(--giants-orange);
+}
+
+.header-side-content img {
+    width: 6rem;
+    margin: 0;
+}
+
+/* #cursor {
+animation: 1.2s infinite steps(1) blink;
+} */
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+#action-call svg {
+    animation: 5s cubic-bezier(.96,-0.65,.05,1.6) infinite point-down;
+    width: 100%;
+}
+
+@keyframes point-down {
+    0%, 10%, 40%, 100% {
+        transform: translate3d(0, 0, 0,);
+    }
+    25% {
+        transform: translate3d(0, 1rem, 0);
+    }
+}
