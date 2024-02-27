@@ -38,7 +38,7 @@ animation: 1.2s infinite steps(1) blink;
 
 #action-call svg {
     animation: 5s cubic-bezier(.96,-0.65,.05,1.6) infinite point-down;
-    width: 100%;
+    width: 90%;
 }
 
 @keyframes point-down {
