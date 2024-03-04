@@ -23,6 +23,12 @@ h1 span {
     margin: 0;
 }
 
+#landing-page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 /* #cursor {
 animation: 1.2s infinite steps(1) blink;
 } */
