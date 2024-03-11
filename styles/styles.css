@@ -27,7 +27,7 @@ h1 span {
     margin: 0;
 }
 
-#landing-page-footer {
+#landing-page-footer, #where-footer {
     position: absolute;
     bottom: 0;
     width: 100%;
