@@ -3,9 +3,9 @@
     --gray-100: #262626;
     --gray-80: #515151;
     --giants-orange: #F46036;
-    --silver-lake-blue: #5B85AA;
+    --silver-lake-blue: #99B8C7;
     --delft-blue: #414770;
-    --russian-violet: #372248;
+    --russian-violet: #513776;
 }
 
 body {
@@ -13,14 +13,24 @@ body {
     background-color: var(--silver-lake-blue);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand';
+}
+
 
 h1 span {
-    color: var(--giants-orange);
+    color: var(--russian-violet);
 }
 
 .header-side-content img {
     width: 6rem;
     margin: 0;
+}
+
+#landing-page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /* #cursor {
